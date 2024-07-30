@@ -8,6 +8,4 @@ soup = BeautifulSoup(page.content, 'html.parser')
 yearlystats = soup.find('div','player-stats-yearbyyear')
 hr = int(yearlystats.find('td', class_='col-2 row-0').find('a').text)
 
-# Extract the text inside the <a> tag
-
 print(hr)
